@@ -1,4 +1,4 @@
-# Basegotchi Whitepaper (English)
+# Basegotchi Whitepaper
 
 ## Introduction
 
