@@ -104,27 +104,6 @@ $$
 \frac{13,500}{900} = 15\ \text{Days}
 $$
 
-## Liquidity Plan (LP)
-
-| ETH      | GOTCHI Token     | USD Equivalent |
-| -------- | ---------------- | -------------- |
-| 0.25 ETH | 450,000 GOTCHI   | 450 USD        |
-| 0.5 ETH  | 900,000 GOTCHI   | 900 USD        |
-| 1 ETH    | 1,800,000 GOTCHI | 1,800 USD      |
-
-### Uniswap v2 LP Calculation
-
-ETH price is set at **1,800 USD**.
-
-$$
-1\ \text{ETH} = 1,800\ \text{USD} = 1,800,000\ \text{GOTCHI}
-$$
-
-Recommended initial liquidity:
-
-$$
-0.5\ \text{ETH} + 900,000\ \text{GOTCHI} = 900\ \text{USD}
-$$
 
 ## Sustainability and Future Plans
 
