@@ -27,12 +27,12 @@ Our goal is to provide a fun and sustainable game model that offers both enterta
 
 Players can upgrade their land to increase animal slot capacity.
 
-| Level   | Slots | Production Multiplier | Price (ETH) |
-| ------- | ----- | --------------------- | ----------- |
-| Level 1 | 2     | 0.015                 | 0.01        |
-| Level 2 | 4     | 0.020                 | 0.02        |
-| Level 3 | 6     | 0.030                 | 0.034       |
-| Level 4 | 8     | 0.040                 | 0.049       |
+| Level   | Slots |Price (ETH) |
+| ------- | ----- | ----------- |
+| Level 1 | 2     |0.01        |
+| Level 2 | 4     |0.02        |
+| Level 3 | 6     |0.034       |
+| Level 4 | 8      0.049       |
 
 ### Production Multiplier Calculation
 
@@ -52,7 +52,7 @@ Hourly Production = Token Price / 96
 
 | Animal  | Price (ETH) | Price (Token) | Hourly Production (Token/hour) | Land Requirement |
 | ------- | ----------- | ------------- | ------------------------------ | ---------------- |
-| Chick   | 0.00368     | 4,500         | 270.00                         | L1               |
+| Chick   | 0.00368     | 4,500         | 180.00                         | L1               |
 | Chicken | 0.01104     | 13,500        | 270.00                         | L1               |
 | Duck    | 0.01308     | 16,000        | 1800.00                        | L2               |
 | Pig     | 0.02760     | 33,750        | 5623.00                        | L3               |
