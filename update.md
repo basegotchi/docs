@@ -32,7 +32,7 @@ Players can upgrade their land to increase animal slot capacity.
 | Level 1 | 2     |0.01        |
 | Level 2 | 4     |0.02        |
 | Level 3 | 6     |0.034       |
-| Level 4 | 8      0.049       |
+| Level 4 | 8     |0.049       |
 
 ### Production Multiplier Calculation
 
