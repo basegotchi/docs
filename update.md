@@ -59,19 +59,8 @@ Animals produce tokens only when placed on land. Production does not disappear i
 
 ## Production Model and Amortization
 
-#### Example (Cow)
 
-**8 Cow with L1 + L2 + L3 + L4 Land:**
-
-* Cow Cost: 96,000 × 8 = 768,000 Tokens
-* Land Cost: 0.113 ETH = 138,215 Tokens
-* Total Setup Cost: 768,000 + 138,215 = 906,215 Tokens
-* Daily Production:
-
-  * 8 Cow × 56,000 × 24 = 10,752,000 Tokens
-* ROI: 906,215 / 10,752,000 ≈ 0.0843 Days ≈ 2 hours
-
-#### Example (Chicken)
+#### Example (Chicken + L1 Land)
 
 **Chicken + L1 Land:**
 
