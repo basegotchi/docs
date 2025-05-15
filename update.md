@@ -34,15 +34,8 @@ Players can upgrade their land to increase animal slot capacity.
 | Level 3 | 6     |0.034       |
 | Level 4 | 8     |0.049       |
 
-### Production Multiplier Calculation
 
-Total Production = Hourly Production × Land Multiplier
 
-## Animal System
-
-Each animal is priced to amortize its cost over **4 days**.
-
-4 Days = 96 Hours
 
 ### Hourly Production Formula
 
