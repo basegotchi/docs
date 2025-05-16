@@ -10,7 +10,7 @@ Our goal is to provide a fun and sustainable game model that offers both enterta
 
 ### \$GOTCHI Token
 
-* Token initial price is set at **0.001 USD**.
+* Token price benchmark is set at **1 ETH = 1,223,150 GOTCHI**.
 * Use cases for the token:
 
   * Buying animals
@@ -19,91 +19,93 @@ Our goal is to provide a fun and sustainable game model that offers both enterta
 
 ### Token Price and Purchasing Power
 
-**Token Price Formula:**
+**Token Price Reference:**
 
-$$
-1\ \text{USD} = 1,000\ \text{GOTCHI}
-$$
-
-$$
-1\ \text{GOTCHI} = 0.001\ \text{USD}
-$$
+1 ETH = 1,223,150 GOTCHI
 
 ## Land System
 
 Players can upgrade their land to increase animal slot capacity.
 
-| Level   | Slots | Production Multiplier | Upgrade Cost (Token) | USD Equivalent |
-| ------- | ----- | --------------------- | -------------------- | -------------- |
-| Level 1 | 2     | 0.015                 | -                    | -              |
-| Level 2 | 4     | 0.020                 | 20,000               | 20 USD         |
-| Level 3 | 6     | 0.030                 | 35,000               | 35 USD         |
-| Level 4 | 8     | 0.040                 | 50,000               | 50 USD         |
+| Level   | Slots |Price (ETH) |
+| ------- | ----- | ----------- |
+| Level 1 | 2     |0.01        |
+| Level 2 | 4     |0.02        |
+| Level 3 | 6     |0.034       |
+| Level 4 | 8     |0.049       |
 
-### Production Multiplier Calculation
 
-$$
-\text{Total Production} = \text{Hourly Production} \times \text{Land Multiplier}
-$$
 
-## Animal System
-
-Each animal is priced to amortize its cost over **15 days**.
-
-$$
-15\ \text{Days} = 360\ \text{Hours}
-$$
 
 ### Hourly Production Formula
 
-$$
-\text{Hourly Production} = \frac{\text{Token Price}}{360}
-$$
+Hourly Production = Token Price / 96
 
 ### Animal Prices and Hourly Production
 
-| Animal  | Price (USD) | Price (Token) | Hourly Production (Token/hour) |
-| ------- | ----------- | ------------- | ------------------------------ |
-| Chick   | 4.50 USD    | 4,500         | 12.50                          |
-| Chicken | 13.50 USD   | 13,500        | 37.50                          |
-| Duck    | 20.25 USD   | 20,250        | 56.25                          |
-| Pig     | 33.75 USD   | 33,750        | 93.75                          |
-| Cow     | 47.25 USD   | 47,250        | 131.25                         |
+| Animal  | Price (ETH) | Price (Token) | Hourly Production (Token/hour) | Land Requirement |
+| ------- | ----------- | ------------- | ------------------------------ | ---------------- |
+| Chick   | 0.00368     | 4,500         | 180.00                         | L1               |
+| Chicken | 0.01104     | 13,500        | 270.00                         | L1               |
+| Duck    | 0.01308     | 16,000        | 1800.00                        | L2               |
+| Pig     | 0.02760     | 33,750        | 5623.00                        | L3               |
+| Cow     | 0.07850     | 96,000        | 56000.00                       | L4               |
 
 #### Example Production (Chicken)
 
-$$
-\frac{13,500}{360} = 37.5\ \text{Token/hour}
-$$
+13,500 / 96 = 140.625 Token/hour → updated to 270 Token/hour
 
 Animals produce tokens only when placed on land. Production does not disappear if unclaimed.
 
 ## Production Model and Amortization
 
-Each animal must recover its cost within the set amortization period.
 
-### Daily Production Formula
+#### Example (Chicken + L1 Land)
 
-$$
-\text{Daily Production} = \text{Hourly Production} \times 24
-$$
+**Chicken + L1 Land:**
 
-### Amortization Period Formula
+* Chicken Price: 13,500 Tokens
+* Land Price: 0.01 ETH = 12,231.5 Tokens
+* Total Cost: 25,731.5 Tokens
+* Daily Production: 270 × 24 = 6,480 Tokens
+* ROI: 25,731.5 / 6480 ≈ 3.97 Days
 
-$$
-\text{Amortization Period (Days)} = \frac{\text{Token Price}}{\text{Daily Production}}
-$$
+#### Example (2 Chicken + 2 Duck with L1 + L2 Land)
 
-#### Example (Chicken)
+* Chicken Cost: 13,500 × 2 = 27,000 Tokens
+* Duck Cost: 16,000 × 2 = 32,000 Tokens
+* Land Cost: L1 (0.01 ETH) + L2 (0.02 ETH) = 0.03 ETH = 36,693 Tokens
+* Total Setup Cost: 27,000 + 32,000 + 36,693 = 95,693 Tokens
+* Daily Production:
 
-$$
-37.5 \times 24 = 900\ \text{Token/day}
-$$
+  * 2 Chicken × 270 × 24 = 12,960 Tokens
+  * 2 Duck × 1800 × 24 = 86,400 Tokens
+  * Total = 99,360 Tokens/day
+* ROI: 95,693 / 99,360 ≈ 0.96 Days
 
-$$
-\frac{13,500}{900} = 15\ \text{Days}
-$$
+#### Example (Pig)
 
+**6 Pig with L1 + L2 + L3 Land:**
+
+* Pig Cost: 33,750 × 6 = 202,500 Tokens
+* Land Cost: L1 (0.01 ETH) + L2 (0.02 ETH) + L3 (0.034 ETH) = 0.064 ETH = 78,281.6 Tokens
+* Total Setup Cost: 202,500 + 78,281.6 = 280,781.6 Tokens
+* Daily Production:
+
+  * 6 Pig × 5623 × 24 = 810,912 Tokens
+* ROI: 280,781.6 / 810,912 ≈ 0.35 Days
+
+#### Example (Cow)
+
+**8 Cow with L1 + L2 + L3 + L4 Land:**
+
+* Cow Cost: 96,000 × 8 = 768,000 Tokens
+* Land Cost: L1 (0.01 ETH) + L2 (0.02 ETH) + L3 (0.034 ETH) + L4 (0.049 ETH) = 0.113 ETH = 138,215 Tokens
+* Total Setup Cost: 768,000 + 138,215 = 906,215 Tokens
+* Daily Production:
+
+  * 8 Cow × 56,000 × 24 = 10,752,000 Tokens
+* ROI: 906,215 / 10,752,000 ≈ 0.0843 Days (≈ 2 hours)
 
 ## Sustainability and Future Plans
 
