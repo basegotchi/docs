@@ -49,7 +49,7 @@ Hourly Production = Token Price / 96
 | Chicken | 0.01104     | 13,500        | 270.00                         | L1               |
 | Duck    | 0.01308     | 16,000        | 1800.00                        | L2               |
 | Pig     | 0.02760     | 33,750        | 5623.00                        | L3               |
-| Cow     | 0.07850     | 96,000        | 56000.00                       | L4               |
+| Cow     | 0.07850     | 96,000        | 28000.00                       | L4               |
 
 #### Example Production (Chicken)
 
@@ -104,8 +104,8 @@ Animals produce tokens only when placed on land. Production does not disappear i
 * Total Setup Cost: 768,000 + 138,215 = 906,215 Tokens
 * Daily Production:
 
-  * 8 Cow × 56,000 × 24 = 10,752,000 Tokens
-* ROI: 906,215 / 10,752,000 ≈ 0.0843 Days (≈ 2 hours)
+  * 8 Cow × 56,000 × 24 = 5,376,000 Tokens
+* ROI: 906,215 / 5,376,000 ≈ 0.1685 Days (≈ 4 hours)
 
 ## Sustainability and Future Plans
 
